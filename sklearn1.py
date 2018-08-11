@@ -24,11 +24,11 @@ model.fit(X_train, y_train)
 # predict values
 prediction = model.predict(X_val)
 # get mse 
-mes = mean_squared_error(prediction, y_val)
+mse = mean_squared_error(prediction, y_val)
 # get variance
 variance = r2_score(prediction, y_val)
 
-print('MES : ', mes)
+print('MSE : ', mse)
 print('Variance :' variance)
 
 # plot graph
